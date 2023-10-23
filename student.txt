@@ -1,5 +1,5 @@
-Student name: Terkuma S
-Student number: your student number
-Student class: your class
+Student name: Terkuma Shadrach Uker
+Student number: 714168
+Student class: IT1D
 GitHub Repository: https://github.com/shadrachhh/Terkuma-Uker-714168-IT1D
 GitHub Pages URL: https://shadrachhh.github.io/Terkuma-Uker-714168-IT1D/
