@@ -1,4 +1,4 @@
-Student name: Terkuma Shadrach Uker
+Student name: Terkuma Shadrach
 Student number: 714168
 Student class: IT1D
 GitHub Repository: https://github.com/shadrachhh/Terkuma-Uker-714168-IT1D
