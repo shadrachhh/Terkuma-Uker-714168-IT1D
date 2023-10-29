@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+         
+    <section class="header">
+        <nav>
+                    <img src="img/logo.png" alt="logo" title="logo">
+                    <main class="nav-links">
+                      <ul>
+                          <li><a href="Cycling.html">Home</a></li>
+                          <li><a href="bestneigbourhood.html">Best Neighbourhoods</a></li>
+                          <li><a href="Cyclingrules.html">Cycling Rules</a></li>
+                          <li><a href="bikerental.html">Bike Rental</a></li>
+                          <li><a href="maintenance.html">Bike Maintenance</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                      </ul>
+    </nav>
+  
+    <article>
+        <form action="https://coolinhollanddemo.azurewebsites.net/" method="post">
+            <fieldset>
+                <legend><strong>Feel free to send me a message</strong></legend>
+    
+               <p><label for="salutation">Title*</label></p>
+                <input type="radio" id="mr" name="salutation" value="Mr">
+                <label for="mr">Mr</label>
+                <input type="radio" id="mrs" name="salutation" value="Mrs">
+                <label for="mrs">Mrs</label>
+
+               <p><label for="name">Name*</label></p>
+                <input type="name" id="name" name="name" required>
+    
+                <p><label for="email">Email Address*</label></p>
+                <input type="email" id="email" name="email" required>
+    
+                <p><label for="phone">Telephone Number</label></p>
+                <input type="tel" id="phone" name="phone">
+    
+                <p></p><label for="message">Request*:</label></p>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    
+                 <aside>
+                    <p>All fields with asterisk(*) are compulsory.</p>
+                 </aside>
+    
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </article>
+              
+    
+    
+        
+</body>
+</html>
