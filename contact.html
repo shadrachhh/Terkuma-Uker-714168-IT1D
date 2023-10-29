@@ -7,56 +7,84 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <form action="https://coolinhollanddemo.azurewebsites.net/" method="post">
          
     <section class="header">
         <nav>
-                    <img src="img/logo.png" alt="logo" title="logo">
-                    <main class="nav-links">
-                      <ul>
-                          <li><a href="Cycling.html">Home</a></li>
-                          <li><a href="bestneigbourhood.html">Best Neighbourhoods</a></li>
-                          <li><a href="Cyclingrules.html">Cycling Rules</a></li>
-                          <li><a href="bikerental.html">Bike Rental</a></li>
-                          <li><a href="maintenance.html">Bike Maintenance</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                      </ul>
+        <img src="img/logo.png" alt="logo" title="logo">
+        <main class="nav-links">
+            <ul>
+                <li><a href="Cycling.html">Home</a></li>
+                <li><a href="bestneigbourhood.html">Best Neighbourhoods</a></li>
+                <li><a href="Cyclingrules.html">Cycling Rules</a></li>
+                <li><a href="bikerental.html">Bike Rental</a></li>
+                <li><a href="maintenance.html">Bike Maintenance</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
     </nav>
   
     <article>
-        <form action="https://coolinhollanddemo.azurewebsites.net/" method="post">
-            <fieldset>
+        <section class="contact">
+            <section class="contact-form">
                 <legend><strong>Feel free to send me a message</strong></legend>
-    
-               <p><label for="salutation">Title*</label></p>
-                <input type="radio" id="mr" name="salutation" value="Mr">
-                <label for="mr">Mr</label>
-                <input type="radio" id="mrs" name="salutation" value="Mrs">
-                <label for="mrs">Mrs</label>
+                <form action="">
+                    <section class="radio-btn">
+                        <p>Title *</p>
+                        <input type="radio" id="mr" name="salutation" value="Mr">
+                        <label for="mr">Mr</label>
+                        <input type="radio" id="miss" name="salutation" value="Mrs">
+                        <label for="mrs">Miss</label>
+                        <input type="radio" id="mrs" name="salutation" value="Mrs">
+                        <label for="mrs">Mrs</label>
+                    </section>
 
-               <p><label for="name">Name*</label></p>
-                <input type="name" id="name" name="name" required>
-    
-                <p><label for="email">Email Address*</label></p>
-                <input type="email" id="email" name="email" required>
-    
-                <p><label for="phone">Telephone Number</label></p>
-                <input type="tel" id="phone" name="phone">
-    
-                <p></p><label for="message">Request*:</label></p>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea>
-    
-                 <aside>
-                    <p>All fields with asterisk(*) are compulsory.</p>
-                 </aside>
-    
-                <input type="submit" value="Submit">
-            </fieldset>
-        </form>
+                    <section class="input-field">
+                        <label for="name">Name *</label>
+                        <input type="name" id="name" name="name" required>
+                    </section>
+                    <section class="input-field">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </section>
+                    
+                    <section class="input-field">
+                        <label for="phone">Telephone Number *</label>
+                        <input type="tel" id="phone" name="phone">
+                    </section>
+                    
+                    <section class="input-field">
+                        <label for="message">Request *</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </section>
+                    
+        
+                     <aside>
+                        <p>All fields with asterisk(*) are compulsory.
+                     </aside>
+                     
+                     <section class="form-btn">
+                        <input type="submit" value="Submit">
+                     </section>
+                </form>
+            </section>
+            <section class="contact-img">
+                <img src="img/logocontact.jpg" alt="">
+            </section>
     </article>
               
     
     
-        
+    <footer class="footer">
+        <section class="footer-img"><img src="img/logo.png"></section>
+        <section class="copyright">
+            <section class="favicon">
+                <img src="img/linkedin (1).png">
+                <img src="img/instagram.png">
+                <img src="img/twitter.png">
+                <img src="img/facebook.png">    
+            </section>
+            <section><p> &copy; Copyright 2018-2022 Terkuma Uker. All Rights Reserved.</p></section>
+        </section>
+    </footer>  
 </body>
 </html>
