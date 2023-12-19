@@ -1,4 +1,516 @@
-*{
+/* General styling */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B1DACB;
+}
+nav img {
+    width: 90px;
+}
+.nav-links ul,li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul,li,a{
+    color:black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    padding: 120px 0 115px 0;
+    color: black;
+    text-align: center;
+    background-color: #B1DACB;
+}
+
+.text-box h1{
+    font-family: 'Muli', 'sans-serif';
+    text-transform: uppercase;
+    font-size: 20px; 
+    letter-spacing: 5px;
+}
+
+.text-box p{
+    padding: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration:none ;
+    background-color: #1eb17c;
+    color: #ffffff;
+    padding: 12px 34px;
+    font-size:  13px;
+    position: static;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #13da13;
+    background: #13da13 ;
+    transition: 1s;
+}
+
+.imgsec{
+    width: 100%;
+    height: 680px;
+}
+
+.imgsec img{    
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.blog{
+    margin-left: 7em; 
+    margin-right: 7em; 
+    height: auto;
+}
+.blogMobile{
+    display: none;
+}
+.blog-header{
+    font-family: 'Muli', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 3rem; 
+    padding-bottom: 3rem;
+}
+.blog-content {
+    width: 100%; 
+    display: flex; 
+    max-height: 420px; 
+    padding-bottom: 40px; 
+    gap: 30px;
+}
+.blog-content-p{
+    font-family: 'Muli', sans-serif;
+    width: 50%; 
+    font-size: 20px; 
+    letter-spacing: -1px; 
+    word-spacing: 2px;
+    overflow: scroll;
+}
+
+.blog-content-img{
+    width: 50%;
+}
+.blog-content-img img{
+    height: 100%; 
+    width: 100%;
+}
+.figCaption{
+    text-align: center;
+}
+
+    /*------footer----*/
+.footer{
+    padding: 20px 0 20px 0;
+    display: flex;
+    background-color:#ddd;
+}
+.footer-img{
+    width: 30%;
+    padding-left: 120px;
+}
+.copyright{
+    width: 100%;
+}
+.favicon{
+    display: flex;
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+.favicon img{
+    padding-left: 100px;
+}
+.favicon img:first-child {
+    padding-left: 0;
+}
+
+
+/*-----Best Neigbourhoods------*/
+
+.bestneigbourhood h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bestneigbourhood img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.Centrum h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.Centrum p{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+    word-spacing: 10px;
+}
+.map-c img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.image-c img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Scheveningen{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+    word-spacing: 10px;
+
+}
+.Scheveningen h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.scheveningenn img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Bezuidenhout{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+    word-spacing: 10px;
+}
+
+.bezuidenhout img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Bezuidenhout h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bezuidenhout p{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+    word-spacing: 10px;
+}
+
+/*-----Bike Rental------*/
+
+.bikerental h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.bikerental img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fiets p{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.bikerental h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 40px; 
+}
+
+.link{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.OV h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.OV p{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.maplink{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px; 
+}
+
+.ov p{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+/*-----Maintenance------*/
+
+.maintenance h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 40px; 
+    border-style: none;
+    border-radius: 0%;
+    border-color: #ddd;
+}
+
+.heading h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left; 
+}
+
+.uppercase-text{
+    text-transform: uppercase;
+}
+
+.maintain h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.maintenance img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.maintain p{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.clean-supplies h4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: normal;
+    text-indent: 0%;
+
+}
+
+.clean-supplies p{
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+    line-height: normal;
+    text-indent: 0%;
+    word-spacing:normal;
+}
+
+.flattires {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left; 
+}
+
+.image-container{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.imgcontainer{
+    display: flex;
+    padding-bottom: 40px;
+}
+.imgcontainer img{
+    width: 100%;
+    height: 500px;
+    
+}
+.box {
+    padding-right: 10px;
+}
+.box:first-child {
+padding-right: none;
+}
+.articleImg{
+    display: flex;
+}
+
+.articleImg img{
+    width: 50%;
+
+    height: 500px;
+}
+/*-----Safety Rules------*/
+.parent-section{
+    margin: 0 120px 0 120px;
+}
+.safety-rules{
+    height: auto;
+}
+.safety-rules img{
+    width: 100%; 
+    height: 550px; 
+    object-fit: cover;
+}
+.safety-rules h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px 0 30px 0;
+}
+
+.safety-rules p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.row{ 
+    columns: 3;
+    column-gap: 20px;
+}
+.column{
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+}
+.column img{
+    width: 100%;
+    height: 300px;
+}
+.safetyrules{
+    margin: 40px 0 0 0;
+    height: auto;
+    justify-content: space-between;
+}
+.text{
+    margin: 40px 0 40px 0;
+    display: block;
+}
+.text p{
+    font-size: 20px;  
+}
+/* contact styling */
+.radio-btn{
+padding-bottom: 20px;
+}
+.contact{
+display: flex;
+margin: 20px 120px 20px 120px;
+}
+.contact-img{
+width: 50%;
+}
+.contact-img img{
+width: 100%;
+}
+.contact-form{
+width: 50%;
+}
+.contact-form legend{
+padding-bottom: 20px;
+font-size: 25px;
+}
+.input-field{
+width: 98%;
+padding: 10px 0 10px 0;
+}
+
+.input-field label{
+display: block;
+padding-bottom: 5px;
+}
+.input-field input{
+border: 1px #707070 solid;
+border-radius: 5px;
+width: 100%;
+padding: 10px 0 10px 0;
+}
+.input-field textarea{
+border: 1px #707070 solid;
+border-radius: 5px;
+width: 100%;
+padding: 20px 0 20px 0;
+}
+.form-btn{
+width: 100%;
+padding-top: 20px;
+}
+.form-btn input{
+font-size: 15px;
+width: 100%;
+background-color: #1eb17c;
+color: #fff;
+padding: 15px 0 15px 0;
+border:none;
+}
+
+
+@media (max-width: 768px) {
+
+
+    *{
     padding: 0;
     margin: 0;
 
@@ -483,496 +995,6 @@ color: #fff;
 padding: 15px 0 15px 0;
 border:none;
 }
-
-
-@media (max-width: 768px) {
-
-
-    *{
-        padding: 0;
-        margin: 0;
-    
-    }
-    
-    nav{
-        display: flex;
-        padding: 2% 6%;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #B1DACB;
-    }
-    nav img {
-        width: 90px;
-    }
-    
-    .nav-links ul li{
-        list-style: none;
-        display: inline-block;
-        padding: 8px 12px;
-        position: relative;
-    }
-    
-    .nav-links ul li a{
-    color:black;
-    text-decoration: none;
-    font: size 13px;
-    }
-    
-    .nav-links ul li::after{
-        content:'';
-        width: 0%;
-        height: 2px;
-        background: #f44336;
-        display: block;
-        margin: auto;
-        transition:0.5s;
-    }
-    
-    .nav-links ul li:hover::after{
-        width: 100%;
-    }
-    
-    .text-box{
-        padding: 120px 0 115px 0;
-        color: black;
-        text-align: center;
-        background-color: #B1DACB;
-    }
-    
-    .text-box h1{
-        font: size 52px; 
-    }
-    .text-box p{
-        padding: 10px 0 40px;
-        font-size: 14px;
-        color: black;
-    }
-    
-    .hero-btn{
-        display: inline-block;
-        text-decoration:none ;
-        background-color: #1eb17c;
-        color: #ffffff;
-        padding: 12px 34px;
-        font-size:  13px;
-        position: relative;
-        cursor: pointer;
-    }
-    
-    .hero-btn:hover{
-        border: 1px solid #13da13;
-        background: #13da13 ;
-        transition: 1s;
-    }
-     
-    .imgsec{
-        width: 100%;
-    }
-    .imgsec img{
-        width: 100%;
-    }
-    
-    .blog{
-    margin-left: 120px; 
-    margin-right: 120px; 
-    height: auto;
-    }
-    .blog-header{
-    text-align: center;
-    font-size: 40px;
-    padding-top: 50px; 
-    padding-bottom: 50px;
-    }
-    .blog-content {
-    width: 100%; 
-    display: flex; 
-    max-height: 420px; 
-    padding-bottom: 30px; 
-    gap: 30px;
-    }
-    .blog-content-p{
-    width: 50%; 
-    font-size: 20px; 
-    word-spacing: 10px; 
-    }
-    
-    .blog-content-img{
-    width: 50%;
-    }
-    .blog-content-img img{
-    height: 100%; 
-    width: 100%;
-    }
-    
-    /*------footer----*/
-    .footer{
-        padding: 20px 0 20px 0;
-        display: flex;
-        background-color:#ddd;
-    }
-    .footer-img{
-        width: 30%;
-        padding-left: 120px;
-    }
-    .copyright{
-        width: 100%;
-    }
-    .favicon{
-        display: flex;
-        padding: 20px 0 20px 0;
-        width: 100%;
-    }
-    .favicon img{
-        padding-left: 100px;
-    }
-    .favicon img:first-child {
-        padding-left: 0;
-    }
-    
-    
-    /*-----Best Neigbourhoods------*/
-    
-    .bestneigbourhood h1{
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .bestneigbourhood img{
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        
-    }
-    
-    .Centrum h1{
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .Centrum p{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-        word-spacing: 10px;
-    }
-    .map-c img{
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .image-c img{
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .Scheveningen{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-        word-spacing: 10px;
-    
-    }
-    .Scheveningen h1{
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .scheveningenn img{
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .Bezuidenhout{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-        word-spacing: 10px;
-    }
-    
-    .bezuidenhout img{
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .Bezuidenhout h1{
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .bezuidenhout p{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-        word-spacing: 10px;
-    }
-    
-    /*-----Bike Rental------*/
-    
-    .bikerental h2{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: left;
-    }
-    
-    .bikerental img{
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .fiets p{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-    }
-    
-    .bikerental h1{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: center;
-        font-size: 40px; 
-    }
-    
-    .link{
-        text-align: center;
-        font-size: 20px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-    }
-    
-    .OV h1{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: left;
-    }
-    
-    .OV p{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-    }
-    
-    .maplink{
-        text-align: center;
-        font-size: 20px;
-        padding-bottom: 15px;
-        padding-top: 15px; 
-    }
-    
-    .ov p{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-    }
-    
-    
-    /*-----Maintenance------*/
-    
-    .maintenance h1{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: center;
-        font-size: 40px; 
-        border-style: none;
-        border-radius: 0%;
-        border-color: #ddd;
-    }
-    
-    .heading h2{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: left; 
-    }
-    
-    .uppercase-text{
-        text-transform: uppercase;
-    }
-    
-    .maintain h3{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: left;
-    }
-    
-    .maintenance img{
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    
-    }
-    
-    .maintain p{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-    }
-    
-    .clean-supplies h4{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        font-size: 20px;
-        line-height: normal;
-        text-indent: 0%;
-    
-    }
-    
-    .clean-supplies p{
-        padding-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-        line-height: normal;
-        text-indent: 0%;
-        word-spacing:normal;
-    }
-    
-    .flattires {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: left; 
-    }
-    
-    .image-container{
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .imgcontainer{
-        display: flex;
-        padding-bottom: 40px;
-    }
-    .imgcontainer img{
-        width: 100%;
-        height: 500px;
-        
-    }
-    .box {
-        padding-right: 10px;
-    }
-    .box:first-child {
-    padding-right: none;
-    }
-    .articleImg{
-        display: flex;
-    }
-    
-    .articleImg img{
-        width: 50%;
-    
-        height: 500px;
-    }
-    /*-----Safety Rules------*/
-    .parent-section{
-        margin: 0 120px 0 120px;
-    }
-    .safety-rules{
-        height: auto;
-    }
-    .safety-rules img{
-        width: 100%; 
-        height: 550px; 
-        object-fit: cover;
-    }
-    .safety-rules h1{
-        font-size: 40px;
-        text-align: center;
-        padding: 50px 0 30px 0;
-    }
-    
-    .safety-rules p{
-        font-size: 20px;
-        padding-top: 10px;
-    }
-    .row{ 
-        columns: 3;
-        column-gap: 20px;
-    }
-    .column{
-        width: 100%;
-        float: left;
-        padding-bottom: 20px;
-    }
-    .column img{
-        width: 100%;
-        height: 300px;
-    }
-    .safetyrules{
-        margin: 40px 0 0 0;
-        height: auto;
-        justify-content: space-between;
-    }
-    .text{
-        margin: 40px 0 40px 0;
-        display: block;
-    }
-    .text p{
-        font-size: 20px;  
-    }
-    /* contact styling */
-    .radio-btn{
-    padding-bottom: 20px;
-    }
-    .contact{
-    display: flex;
-    margin: 20px 120px 20px 120px;
-    }
-    .contact-img{
-    width: 50%;
-    }
-    .contact-img img{
-    width: 100%;
-    }
-    .contact-form{
-    width: 50%;
-    }
-    .contact-form legend{
-    padding-bottom: 20px;
-    font-size: 25px;
-    }
-    .input-field{
-    width: 98%;
-    padding: 10px 0 10px 0;
-    }
-    
-    .input-field label{
-    display: block;
-    padding-bottom: 5px;
-    }
-    .input-field input{
-    border: 1px #707070 solid;
-    border-radius: 5px;
-    width: 100%;
-    padding: 10px 0 10px 0;
-    }
-    .input-field textarea{
-    border: 1px #707070 solid;
-    border-radius: 5px;
-    width: 100%;
-    padding: 20px 0 20px 0;
-    }
-    .form-btn{
-    width: 100%;
-    padding-top: 20px;
-    }
-    .form-btn input{
-    font-size: 15px;
-    width: 100%;
-    background-color: #1eb17c;
-    color: #fff;
-    padding: 15px 0 15px 0;
-    border:none;
-    }
 
 
 
