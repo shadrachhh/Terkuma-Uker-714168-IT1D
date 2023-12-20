@@ -3,85 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="This is a test to build a website using guidlines. This requires my metadata 
+        description to contain between 50-160 words so i'll describe a little bit about this project.
+        The company is a cycling company. We rent out bicycles with a certain geo-location for tourists and kids to
+        have the time of their lives. We make little profits but its more about the love we are spreading."
+    >
+    <meta name="keywords" content="cycling, Hague, bicycle, rent, bike rental">
+    <title>Contact Page</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon(1).ico">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <form action="https://coolinhollanddemo.azurewebsites.net/" method="post">
-         
-    <section class="header">
-        <nav>
+
+    <nav class="header">
         <img src="img/logo.png" alt="logo" title="logo">
-        <main class="nav-links">
+        <section class="nav-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="Cycling.html">Home</a></li>
                 <li><a href="bestneigbourhood.html">Best Neighbourhoods</a></li>
                 <li><a href="Cyclingrules.html">Cycling Rules</a></li>
                 <li><a href="bikerental.html">Bike Rental</a></li>
                 <li><a href="maintenance.html">Bike Maintenance</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+        </section>
     </nav>
   
-    <article>
-        <section class="contact">
-            <section class="contact-form">
-                <legend><strong>Feel free to send me a message</strong></legend>
-                <form action="">
-                    <section class="radio-btn">
-                        <p>Title *</p>
-                        <input type="radio" id="mr" name="salutation" value="Mr">
-                        <label for="mr">Mr</label>
-                        <input type="radio" id="miss" name="salutation" value="Mrs">
-                        <label for="mrs">Miss</label>
-                        <input type="radio" id="mrs" name="salutation" value="Mrs">
-                        <label for="mrs">Mrs</label>
-                    </section>
-
-                    <section class="input-field">
-                        <label for="name">Name *</label>
-                        <input type="name" id="name" name="name" required>
-                    </section>
-                    <section class="input-field">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </section>
-                    
-                    <section class="input-field">
-                        <label for="phone">Telephone Number *</label>
-                        <input type="tel" id="phone" name="phone">
-                    </section>
-                    
-                    <section class="input-field">
-                        <label for="message">Request *</label>
-                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
-                    </section>
-                    
+    <main class="contactBack">
         
-                     <aside>
-                        <p>All fields with asterisk(*) are compulsory.
-                     </aside>
-                     
-                     <section class="form-btn">
-                        <input type="submit" value="Submit">
-                     </section>
+        <article class="contact">
+            
+            <section class="contact-form">        
+                <form>
+                    <fieldset>
+                        <legend>Feel free to send me a message:</legend>
+                        <section class="radio-btn">
+                            <p>Title *</p>
+                            <input type="radio" id="mr" name="salutation" value="Mr">
+                            <label for="mr">Mr</label>
+                            <input type="radio" id="miss" name="salutation" value="Mrs">
+                            <label for="mrs">Miss</label>
+                            <input type="radio" id="mrs" name="salutation" value="Mrs">
+                            <label for="mrs">Mrs</label>
+                        </section>
+                        <section class="input-field">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name">
+                        </section>
+                        <section class="input-field">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" value="email">
+                        </section>
+                        
+                        <section class="input-field">
+                            <label for="phone">Telephone Number *</label>
+                            <input type="tel" id="phone" name="phone">
+                        </section>
+                        
+                        <section class="input-field">
+                            <label for="message">Request *</label>
+                            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                        </section>
+                        
+            
+                         <aside>
+                            <p>All fields with asterisk(*) are compulsory.
+                         </aside>
+                         
+                         <section class="form-btn">
+                            <input type="submit" value="Submit">
+                         </section>
+                    </fieldset>
                 </form>
             </section>
             <section class="contact-img">
-                <img src="img/logocontact.jpg" alt="">
+                <img src="img/logocontact.jpg" alt="contactLogo" title="contactLogo">
             </section>
-    </article>
+        </article>
+    </main>
               
     
     
+    <!-- footer -->
     <footer class="footer">
-        <section class="footer-img"><img src="img/logo.png"></section>
+        <section class="footer-img"><img src="img/logo.png" alt="Footer img" title="footer img"></section>
         <section class="copyright">
             <section class="favicon">
-                <img src="img/linkedin (1).png">
-                <img src="img/instagram.png">
-                <img src="img/twitter.png">
-                <img src="img/facebook.png">    
+                <img src="img/linkedin1.png" alt="linkedin logo" title="linkedin">
+                <img src="img/instagram.png" alt="instagram logo" title="instagram">
+                <img src="img/twitter.png" alt="twitter logo" title="twitter">
+                <img src="img/facebook.png" alt="facebook logo" title="facebook">    
             </section>
             <section><p> &copy; Copyright 2018-2022 Terkuma Uker. All Rights Reserved.</p></section>
         </section>
